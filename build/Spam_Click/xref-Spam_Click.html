@@ -5916,28 +5916,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#Spam_Click.py">Spam_Click.py</a>
- &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#pathlib">pathlib</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="ntpath"></a>
-  <a target="code" href="" type="text/plain"><tt>ntpath</tt></a>
-<span class="moduletype">AliasNode</span>  <div class="import">
-imports:
-    <a href="#ntpath">ntpath</a>
- &#8226;   <a href="#os">os</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#os">os</a>
- &#8226;   <a href="#py_compile">py_compile</a>
- &#8226;   <a href="#tracemalloc">tracemalloc</a>
 
   </div>
 
@@ -6059,7 +6040,7 @@ imports:
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#nt">nt</a>
  &#8226;   <a href="#ntpath">ntpath</a>
- &#8226;   <a href="#ntpath">ntpath</a>
+ &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#posix">posix</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#stat">stat</a>
@@ -6090,8 +6071,8 @@ imported by:
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#ntpath">ntpath</a>
- &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#optparse">optparse</a>
+ &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#posixpath">posixpath</a>
  &#8226;   <a href="#py_compile">py_compile</a>
@@ -6107,6 +6088,25 @@ imported by:
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#uu">uu</a>
  &#8226;   <a href="#zipfile">zipfile</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="os.path"></a>
+  <a target="code" href="" type="text/plain"><tt>os.path</tt></a>
+<span class="moduletype">AliasNode</span>  <div class="import">
+imports:
+    <a href="#ntpath">ntpath</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#os">os</a>
+ &#8226;   <a href="#py_compile">py_compile</a>
+ &#8226;   <a href="#tracemalloc">tracemalloc</a>
 
   </div>
 
@@ -6276,8 +6276,8 @@ imports:
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
  &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
- &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#traceback">traceback</a>
 
@@ -6364,9 +6364,9 @@ imports:
  &#8226;   <a href="#pynput">pynput</a>
  &#8226;   <a href="#pynput._util">pynput._util</a>
  &#8226;   <a href="#pynput._util.win32_vks">pynput._util.win32_vks</a>
- &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#six.moves">six.moves</a>
+ &#8226;   <a href="#six.moves.queue">six.moves.queue</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#threading">threading</a>
 
@@ -6865,24 +6865,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#queue">queue</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="queue"></a>
-  <a target="code" href="" type="text/plain"><tt>queue</tt></a>
-<span class="moduletype">AliasNode</span>  <div class="import">
-imports:
-    <a href="#queue">queue</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#pynput._util">pynput._util</a>
- &#8226;   <a href="#six.moves">six.moves</a>
+    <a href="#six.moves.queue">six.moves.queue</a>
 
   </div>
 
@@ -7152,13 +7135,30 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>six.moves</tt></a>
 <span class="moduletype">RuntimePackage</span>  <div class="import">
 imports:
-    <a href="#queue">queue</a>
- &#8226;   <a href="#six">six</a>
+    <a href="#six">six</a>
+ &#8226;   <a href="#six.moves.queue">six.moves.queue</a>
 
   </div>
   <div class="import">
 imported by:
     <a href="#pynput._util">pynput._util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="six.moves.queue"></a>
+  <a target="code" href="" type="text/plain"><tt>six.moves.queue</tt></a>
+<span class="moduletype">AliasNode</span>  <div class="import">
+imports:
+    <a href="#queue">queue</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#pynput._util">pynput._util</a>
+ &#8226;   <a href="#six.moves">six.moves</a>
 
   </div>
 
@@ -7686,7 +7686,7 @@ imports:
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#linecache">linecache</a>
- &#8226;   <a href="#ntpath">ntpath</a>
+ &#8226;   <a href="#os.path">os.path</a>
  &#8226;   <a href="#pickle">pickle</a>
 
   </div>
