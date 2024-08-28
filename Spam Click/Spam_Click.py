@@ -9,7 +9,6 @@ positions_cibles = []  # Liste des positions cibles
 current_target_index = 0  # Index de la position cible actuelle
 state = False
 clic_interval = 0.01  # Intervalle entre les clics en secondes
-max_positions = 4  # Nombre maximum de positions cibles
 clic_thread = None  # Thread pour les clics
 
 
@@ -19,11 +18,9 @@ def get_position_cible():
     global positions_cibles
     mouse = Controller()
     print("Current position: " + str(mouse.position))
-    if len(positions_cibles) < max_positions:
-        positions_cibles.append(mouse.position)
-        print(f"Position cible ajoutée: {mouse.position}")
-    else:
-        print("Maximum de positions cibles atteint.")
+    positions_cibles.append(mouse.position)
+    print(f"Position cible ajoutée: {mouse.position}")
+
 
 def set_clic_interval(value):
     global clic_interval
